@@ -15,10 +15,9 @@ const DrawerModule = ({
     <motion.div
       layout
       className={`
-        bg-white dark:bg-black border-black dark:border-white 
+        bg-white dark:bg-offblack border-black dark:border-white 
         cursor-pointer transition-all duration-200
         ${!isLast ? 'border-b' : ''}
-        hover:bg-gray-50 dark:hover:bg-gray-900
       `}
       onClick={onClick}
     >
@@ -30,28 +29,18 @@ const DrawerModule = ({
             }`}>
               {title}
             </h2>
-            
-            {subtitle && !animatedQuestions && (
+
+            {/* Render subtitle only once under the title when provided */}
+            {subtitle && (
               <p className="font-mono text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                 {subtitle}
               </p>
             )}
-            
+
             {animatedQuestions && (
               <div className="space-y-2">
                 <AnimatedQuestions questions={animatedQuestions} />
-                {subtitle && (
-                  <p className="font-mono text-sm font-medium text-black dark:text-white">
-                    {subtitle}
-                  </p>
-                )}
               </div>
-            )}
-            
-            {!animatedQuestions && subtitle && (
-              <p className="font-mono text-sm text-gray-600 dark:text-gray-400 mt-1">
-                {subtitle}
-              </p>
             )}
           </div>
           

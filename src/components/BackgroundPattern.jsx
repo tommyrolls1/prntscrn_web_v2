@@ -1,7 +1,7 @@
 const BackgroundPattern = () => {
   return (
-    <div className="fixed inset-0 z-0">
-      <div className="w-full h-full bg-grid-pattern dark:bg-grid-pattern-dark opacity-50" />
+    <div className="fixed inset-0 z-0 pointer-events-none">
+      <div className="w-full h-full bg-diagonal-hatch dark:bg-diagonal-hatch-dark opacity-100" />
     </div>
   )
 }

@@ -123,7 +123,7 @@ const Legal = () => (
         </div>
         <div>
           <h3 className="font-sans text-base mb-1">Data Controller & Contact</h3>
-          <p><strong>Controller:</strong> PRNTSCRN Pty Ltd (ACN 000 000 000)</p>
+          <p><strong>Controller:</strong> PRNTSCRN Pty Ltd (ACN 688 382 523)</p>
           <p><strong>Privacy Contact:</strong> <a className="underline" href="mailto:privacy@prntscrn.studio">privacy@prntscrn.studio</a></p>
         </div>
         <div>
